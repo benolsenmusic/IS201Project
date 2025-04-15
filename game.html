@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Freestyle Rap Word Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1a1a1a;
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1.2em;
+      cursor: pointer;
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .words {
+      margin-top: 30px;
+      font-size: 2em;
+      font-weight: bold;
+      color: #00e676;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎤 Freestyle Rap Word Generator</h1>
+  <p>Click the button to get 3 random words for your next freestyle!</p>
+  <button onclick="generateWords()">Generate Words</button>
+
+  <div class="words" id="wordDisplay"></div>
+
+  <script>
+    const words = [
+      "fire", "dream", "money", "light", "storm", "truth", "fly", "mic", "grind", "vibe",
+      "king", "flow", "night", "power", "run", "code", "stage", "beat", "win", "real",
+      "fame", "hustle", "heart", "zone", "rise", "bars", "drip", "mind", "love", "sky"
+    ];
+
+    function generateWords() {
+      let selected = [];
+      while (selected.length < 3) {
+        let word = words[Math.floor(Math.random() * words.length)];
+        if (!selected.includes(word)) {
+          selected.push(word);
+        }
+      }
+      document.getElementById("wordDisplay").innerText = selected.join(" • ");
+    }
+  </script>
+
+</body>
+</html>

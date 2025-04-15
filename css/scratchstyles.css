@@ -1,0 +1,50 @@
+/* Background color */
+.background {
+    background-color: #66b1cc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Navigation bar */
+.nav-bar {
+    background-color: #dde6f1;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Header section */
+.header-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.main-image {
+    width: 300px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Content block */
+.content-section {
+    margin: 30px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* Video embed block */
+.video-section {
+    background-color: #e3f2fd;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+/* Tableau section */
+.tableau-section {
+    background-color: #fff3e0;
+    padding: 30px;
+    margin: 30px;
+    border: 1px solid #ffc107;
+    border-radius: 12px;
+}
